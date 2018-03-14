@@ -85,6 +85,7 @@ class StackVarConvertor(ChainProcessor, Convertor):
             Oprint.warn('Cannot find key {} output from stack {}'.format(key, stack_name), 'lmdo')
         except Exception:
             Oprint.warn('Error while retrieving output from {}'.format(stack_name), 'lmdo')
+            raise
 
         return None
  
